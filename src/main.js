@@ -26,7 +26,7 @@ function hello() {
     console.log( `Message from src/main.js : ${ data.message }` )
 }
 
-// render a .md file from ./content/ to the id="markdown" tag on the DOM
+// render a markdown file from ./content/ to the tag with id="markdown"
 function renderMarkdownFile(file) {
     if(document.getElementById('markdown')){
         var request = new XMLHttpRequest();
@@ -42,5 +42,5 @@ function renderMarkdownFile(file) {
         request.send();
     }
     else
-        console.log('no markdown id')
+        console.log('no markdown id found')
 }

@@ -14,9 +14,10 @@ mkdir $project_path
 mkdir $project_path/content
 # src/
 mkdir $project_path/src
-# assets/ components/ views/
-mkdir $project_path/src/assets $project_path/src/components $project_path/src/views
-
+# src/assets/ src/assets/js src/assets/css
+mkdir $project_path/src/assets $project_path/src/assets/js $project_path/src/assets/css
+# src/components/ src/views/
+mkdir $project_path/src/components $project_path/src/views
 
 ###################### create files
 # index.html
@@ -31,4 +32,7 @@ cat $toxem_path/src/global.css > $project_path/src/global.css
 cat $toxem_path/src/hello.mjs > $project_path/src/components/hello.mjs
 # src/views/homepage.mjs
 cat $toxem_path/src/homepage.mjs > $project_path/src/views/homepage.mjs
-
+# src/assets/js/markdown-it.min.js
+cat $toxem_path/src/markdown-it.min.js > $project_path/src/assets/js/markdown-it.min.js
+# src/assets/css/markdown.css
+cat $toxem_path/src/markdown.css > $project_path/src/assets/css/markdown.css
