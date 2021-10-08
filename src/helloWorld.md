@@ -12,5 +12,5 @@ The markdown content is rendered using:
 
 Enjoy!
 
-- [Get started](getstarted.html)
+- [Get started](getstarted.html) **TODO**
 - [About JS Modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
