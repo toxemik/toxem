@@ -12,5 +12,26 @@ The markdown content is rendered using:
 
 Enjoy!
 
-- [Get started](getstarted.html) **TODO**
-- [About JS Modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
+## Get started
+
+Clone this repository:
+
+```sh
+git clone https://github.com/toxemik/toxem
+```
+
+Run the **toxem** script:
+
+```sh
+# Run the **toxem** script with the **project_path**
+# To create toxem-test/ on the desktop
+./toxem $HOME/Desktop/toxem-test
+```
+
+The folder is created with the example files and directories.
+
+To see the index.html file in your browser, **disable CORS** or local files restrictions.
+
+## Links
+
+[About JS Modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)

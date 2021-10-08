@@ -1,7 +1,7 @@
 const data = {
   text: 'Welcome!',
   style: {
-    p: `
+    h1: `
       color: #333;
       border-bottom: 2px solid #333;
     `
@@ -9,7 +9,7 @@ const data = {
 }
 
 const template = `
-  <h1 style="${ data.style.p }">${ data.text }</h1>
+  <h1 style="${ data.style.h1 }">${ data.text }</h1>
 `
 
 export default template
