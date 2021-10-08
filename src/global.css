@@ -1,0 +1,7 @@
+/* This is the main CSS file
+** Place here the CSS code that can't be written in the components .mjs files
+*/
+
+#markdown {
+	color: #333;
+}

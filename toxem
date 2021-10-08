@@ -1,0 +1,34 @@
+#!/bin/bash
+# This script creates the files and directories to start a new project
+# Usage : ./toxem <project_path>
+
+###################### get the project path
+project_path=$1
+toxem_path=`pwd`
+
+###################### create toxem project
+mkdir $project_path
+
+###################### create directory structure
+# content/
+mkdir $project_path/content
+# src/
+mkdir $project_path/src
+# assets/ components/ views/
+mkdir $project_path/src/assets $project_path/src/components $project_path/src/views
+
+
+###################### create files
+# index.html
+cat $toxem_path/src/index.html > $project_path/index.html
+# content/helloWorld.md
+cat $toxem_path/src/helloWorld.md > $project_path/content/helloWorld.md
+# src/main.js
+cat $toxem_path/src/main.js > $project_path/src/main.js
+# src/global.css
+cat $toxem_path/src/global.css > $project_path/src/global.css
+# src/components/hello.mjs
+cat $toxem_path/src/hello.mjs > $project_path/src/components/hello.mjs
+# src/views/homepage.mjs
+cat $toxem_path/src/homepage.mjs > $project_path/src/views/homepage.mjs
+
